@@ -14,6 +14,9 @@ from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
 import aiohttp
+#from cfscrape import create_scraper
+
+#cget = create_scraper().get
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -396,7 +399,8 @@ async def get_shortlink(link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://{URL_SHORTENR_WEBSITE}/st?api={URL_SHORTNER_WEBSITE_API}&url={link}'
+                    #link = cget(f'https://{SHORTENER}/st?api={SHORTENER_API}&url={link}&format=text').text
+                    return f'https://{URL_SHORTENR_WEBSITE}/api?api={URL_SHORTNER_WEBSITE_API}&url={link}'
       
     except Exception as e:
         logger.error(e)
