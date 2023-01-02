@@ -4,7 +4,7 @@ from subprocess import run as srun
 from requests import get as rget
 
 UPSTREAM_REPO = "https://github.com/prajith2252/url-filebot"#environ.get('UPSTREAM_REPO')
-UPSTREAM_BRANCH = "master" 
+UPSTREAM_BRANCH = "main" 
 try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
