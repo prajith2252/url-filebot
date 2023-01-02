@@ -32,8 +32,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://troopfilesbot:troopfilesbot@cluster0.ypn9j6a.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Troopfilesbot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tmaadda:tmaadda@cluster0.8vqs89z.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Tmamoviesbottt")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -68,8 +68,8 @@ UPSTREAM_REPO = "https://github.com/JohnWickKeanue/file-bot"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gyanilinks.com')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '858e9c14c3d2bc7a6ca3e3f9208d8e9d1e40a763')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gtlink.co')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'b3e27faa74d9161c43c7d4f9caae2dcf92778013')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
@@ -79,7 +79,7 @@ if SELF_DELETE == "True":
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/troopsosl"
+DOWNLOAD_TEXT_URL = "https://t.me/how_to_use_tmafilesbot"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Subscribe"
