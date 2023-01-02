@@ -437,7 +437,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmadiscuss'),
             InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
         ], [
-            InlineKeyboardButton('♻️ GET PREMIUM ♻️', callback_data='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
+            InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
