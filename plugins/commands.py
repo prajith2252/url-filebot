@@ -26,7 +26,7 @@ async def start(client, message):
                 InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='https://t.me/tmabackup')
             ],
             [
-                InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url=f"https://t.me/tmaadda"),
+                InlineKeyboardButton('⚡ Request group ⚡', url=f"https://t.me/tmadiscuss"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -47,24 +47,18 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://tmaadda'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmabackup')
+            InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmaadda'),
+            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
             ],[
             InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-
         await message.reply_photo(
-
             photo=random.choice(PICS),
-
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-
             reply_markup=reply_markup,
-
             parse_mode=enums.ParseMode.HTML
-
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
@@ -99,8 +93,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://t.me/tmaadda'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmabackup')
+            InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmadiscuss'),
+            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
             ],[
             InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
@@ -253,7 +247,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/c/GreyMattersBot') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://t.me/trooporiginalsbackup') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
