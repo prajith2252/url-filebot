@@ -431,14 +431,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmadiscuss'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
-        ], [
-            InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+        buttons = [
+            [
+            InlineKeyboardButton('How To Use our Bot', url='https://telegram.me/how_to_use_tmafilesbot/2')
+        ],[
+            InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
+            InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
+            ],[
+            InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
