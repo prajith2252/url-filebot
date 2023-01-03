@@ -51,8 +51,6 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
             InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
             ],[
-                InlineKeyboardButton('🔍 Search your movies here', switch_inline_query_current_chat='')
-            ],[
             InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
             
         ]]
@@ -99,8 +97,6 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
             InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
-            ],[
-                InlineKeyboardButton('🔍 Search your movies here', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
             
