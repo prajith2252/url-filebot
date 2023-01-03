@@ -44,14 +44,17 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [
+            [
+            InlineKeyboardButton('How To Use our Bot', url='https://telegram.me/how_to_use_tmafilesbot/2')
+        ],[
+            InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
+            InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
             ],[
-            InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmaadda'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
+                InlineKeyboardButton('🔍 Search your movies here', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,14 +93,17 @@ async def start(client, message):
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [
+            [
+            InlineKeyboardButton('How To Use our Bot', url='https://telegram.me/how_to_use_tmafilesbot/2')
+        ],[
+            InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
+            InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
             ],[
-            InlineKeyboardButton('⚡ Request group ⚡', url='https://t.me/tmadiscuss'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/tmaadda')
+                InlineKeyboardButton('🔍 Search your movies here', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('♻️ GET PREMIUM ♻️', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
