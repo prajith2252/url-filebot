@@ -98,7 +98,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Channel', url='https://telegram.me/tmaadda'),
             InlineKeyboardButton('👥 Support Chat', url='https://telegram.me/tmadiscuss')
             ],[
-            InlineKeyboardButton('💲 Get Premium Access', url='https://Tmaadda.rpy.club/g/ocU5Sv5Zgo')
+            InlineKeyboardButton('💲 Get Premium Access', url='https://T.me/TmaSupportBot')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
