@@ -168,7 +168,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             
- await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝Content Name :{search}\nRequested By: {message.from_user.first_name}\n USER ID:{message.from_user.id}\n\n🗃",
+ await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝Content Name :{search}\nRequested By: {message.from_user.first_name}\n USER ID:{message.from_user.id}\n\n🗃",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
             k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 💌')
             await asyncio.sleep(10)
             await k.delete()
